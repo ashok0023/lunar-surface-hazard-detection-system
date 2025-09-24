@@ -1,0 +1,7 @@
+# Lunar Hazard Detection Dataset Configuration
+train: /Users/ashokr/Desktop/mini project/techyashu/space tech/data/processed/train/images
+val: /Users/ashokr/Desktop/mini project/techyashu/space tech/data/processed/val/images
+test: /Users/ashokr/Desktop/mini project/techyashu/space tech/data/processed/test/images
+
+nc: 6
+names: ['crater', 'rock', 'shadow_region', 'dust_devil', 'slope', 'lunar_module']
