@@ -75,8 +75,8 @@ def load_model():
 def detect_hazards(image_path: str) -> Dict:
     """Detect hazards in lunar surface image"""
     try:
-        # Run inference
-        results = model(image_path)
+        # Run inference with very low confidence threshold to catch more detections
+        results = model(image_path, conf=0.01)
 
         # Process results
         detections = []
